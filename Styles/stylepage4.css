@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&family=Open+Sans+Condensed:wght@300&family=Roboto+Mono:wght@100&family=Sansita+Swashed:wght@300&family=Work+Sans:wght@100&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    perspective: 800px;
+}
+/*=========Navigation=========*/
+
+.navbar-brand img {
+    height: 3rem;
+}
+
+.navbar {
+    background-color:#34495e;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    box-shadow: 0 .5rem 0 .5rem rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
+.nav-item {
+    padding: .5rem;
+}
+
+.nav-link {
+    color: whitesmoke!important;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.nav-link:hover {
+    color: #4981b3!important;
+}
+/*===Portfolio PAge===*/
+.hero-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+.hero {
+    background-image: url('/img/22.jpg');
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .6;
+    z-index: -1;
+}
+.hero h1 {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+.hero h1:nth-child(1) {
+    animation-delay: 1.5s;
+}
+.hero h1:nth-child(2) {
+    animation-delay: 2.5s;
+}
+.hero h1:nth-child(3) {
+    animation-delay: 3.5s;
+}
+.hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #dc143c;
+    animation: text_reveal_box 1s ease;
+    animation-delay: .3s;
+}
+.hero h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+.hero h1:nth-child(2) span {
+    animation-delay: 2s;
+}
+.hero h1:nth-child(3) span {
+    animation-delay: 3s;
+}
+.hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #dc143c;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    transition-property: background-color, color;
+}
+.hero .cta:hover {
+    color: #fff;
+    background-color: #dc143c;
+}
+
+/*==@keyframes==*/
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    100% {
+        color: #fff;
+    }
+}
+/*==End @keyframes==*/
+
+/*===End of Portfolio PAge===*/
+
+.bg-custom {
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 1rem;
+}
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    text-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 1);
+}
+
+.border-primary {
+    border-top: .2rem solid #4981b3!important;
+}
+
+.carousel-caption h3 {
+    font-size: 2.2rem;
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 1);
+}
+
+/*====Footer===================*/
+
+footer {
+    /*background-color: rgb(4, 43, 126);*/
+    background-image: url('/img/R.jpg');
+    padding: 1rem 2rem 3rem;
+}
+
+footer img {
+    height: 4.5rem;
+    margin: 1.5rem auto;
+}
+
+footer p, footer a,
+.socket a {
+    color: white;
+    text-decoration: none;
+}
+ul.social {
+    list-style-type: none;
+    display: flex;
+    max-width: 16rem;
+    margin: 0 auto;
+    padding: 0;
+}
+ul.social li {
+    margin: 0 auto;
+}
+footer .svg-inline--fa {
+    font-size: 2.3rem;
+}
+footer .svg-inline--fa:hover {
+    color: #68a0d2;
+}
+/*============SOCKET===========*/
+.socket {
+    background-color: #34495e;
+    border-top: .1rem solid #4981b3;
+    text-decoration: none;
+}
+
+.socket a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/*========Media Queries========*/
+/*---Devices under 1199px (xl)---*/
+@media (max-width: 1199.98px) {
+ .carousel-caption h1 {
+     font-size: 2.8rem;
+ }
+ .carousel-caption h3 {
+     font-size: 1.8rem;
+ }
+}
+/*---Devices under 992px (md)---*/
+@media (max-width: 991.98px) {
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+    }
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+    .btn-lg {
+        font-size: .95rem;
+    }
+}
+/*---Devices under 576px (md)---*/
+@media (max-width: 576.98px) {
+    
+}
+
+/*--Bootstrap Mobile Gutter fixes--*/
+.row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+/*------Fixed background image-----*/
+.fixed-background {
+    position: relative;
+    width: 100%;
+    z-index: 1000!important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999!important;
+}
+
+.fixed {
+    z-index: -999!important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ();
+    transform: translateZ();
+    /*--Will-change: transform;--*/
+}
