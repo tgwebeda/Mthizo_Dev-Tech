@@ -46,7 +46,7 @@ a {
     text-decoration: none;
 }
 .hero {
-    background-image: url('/img/22.jpg');
+    background-image: url('img/22.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
