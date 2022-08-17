@@ -46,7 +46,7 @@ a {
     text-decoration: none;
 }
 .hero {
-    background-image: url('../img/com.png');
+    background-image: url('/img/com.png');
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -161,7 +161,6 @@ a {
 /*====Footer===================*/
 
 footer {
-    /*background-color: rgb(4, 43, 126);*/
     background-image: url('/img/R.jpg');
     padding: 1rem 2rem 3rem;
 }
