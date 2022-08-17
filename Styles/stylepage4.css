@@ -46,7 +46,7 @@ a {
     text-decoration: none;
 }
 .hero {
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url('img/com.png');
+    background-image: url('img/com.png');
     background-size: cover;
     background-position: top center;
     position: relative;
