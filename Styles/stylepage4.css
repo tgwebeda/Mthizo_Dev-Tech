@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre&family=Open+Sans+Condensed:wght@300&family=Roboto+Mono:wght@100&family=Sansita+Swashed:wght@300&family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Roboto:wght@100&display=swap');
 
 body {
     overflow-x: hidden;
@@ -46,7 +46,7 @@ a {
     text-decoration: none;
 }
 .hero {
-    background-image: url('/img/22.jpg');
+    background-image: url('img/22.jpg');
     background-size: cover;
     background-position: top center;
     position: relative;
