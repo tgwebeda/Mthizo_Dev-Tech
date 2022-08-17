@@ -46,7 +46,7 @@ a {
     text-decoration: none;
 }
 .hero {
-    background-image: url('/img/com.png');
+    background-image: url('https://www.pexels.com/photo/silhouette-of-mountain-near-body-of-water-1301976/');
     background-size: cover;
     background-position: top center;
     position: relative;
