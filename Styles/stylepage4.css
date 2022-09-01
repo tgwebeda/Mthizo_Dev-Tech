@@ -162,8 +162,8 @@ a {
 /*====Footer===================*/
 
 footer {
-    background-image: url(/img/R.jpg);
-    padding: 1rem 2rem 3rem;
+    margin: 0;
+    padding: 0;
 }
 
 footer img {
