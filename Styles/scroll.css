@@ -1,7 +1,5 @@
 body {
-    margin: 0;
-    padding: 0;
-    over-flow: hidden;
+    overflow-x: hidden;
 }
 .rows {
     display: flex;
